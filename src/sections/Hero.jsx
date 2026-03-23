@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Float } from "@react-three/drei";
 import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/ParallaxBackground";
+import ParallaxBackground from "../components/parallaxBackground";
 import { Astronaut } from "../components/Astronaut";
 import Loader from "../components/Loader";
 
