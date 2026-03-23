@@ -27,6 +27,7 @@ import arduinoLogo from "../assets/assets/logos/arduino.jpg";
 import whatsAppIcon from "../assets/assets/socials/whatsApp.svg";
 import linkedInIcon from "../assets/assets/socials/linkedIn.svg";
 import instagramIcon from "../assets/assets/socials/instagram.svg";
+import facebookIcon from "../assets/assets/socials/facebook.svg";
 
 export const myProjects = [
   {
@@ -37,7 +38,13 @@ export const myProjects = [
     subDescription: [
       "Development of a complete classroom scheduling and reservation system for classes. It includes three main components that work together to efficiently manage timetables and bookings, using Spring Boot, React.js, and Python for the development of the AI model.",
     ],
-    href: "",
+    href: "https://github.com/nadhem73/Systeme-de-reservation-et-de-planification-des-salles-d-universite.git",
+    githubLinks: [
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/nadhem73/Systeme-de-reservation-et-de-planification-des-salles-d-universite.git"
+      }
+    ],
     logo: "",
     image: dashboardImg,
     tags: [
@@ -77,7 +84,17 @@ export const myProjects = [
       "Eventora is a comprehensive event management platform that simplifies the organization, booking, and participation in all types of events. This application aims to revolutionize how events are created, managed, and experienced by users.",
       
     ],
-    href: "",
+    href: "https://github.com/nadhem73/Eventora_Desktop.git",
+    githubLinks: [
+      {
+        label: "Desktop Application",
+        url: "https://github.com/nadhem73/Eventora_Desktop.git"
+      },
+      {
+        label: "Website",
+        url: "https://github.com/nadhem73/Eventora_WebSite.git"
+      }
+    ],
     logo: "",
     image: eventoraaImg,
     tags: [
@@ -121,7 +138,13 @@ export const myProjects = [
     subDescription: [
       "Development of a desktop application in C++ using AI, designed for the intelligent management of artworks, with Qt Creator, SQL Server, and GitHub to provide a reliable solution for the needs of art collections.",
     ],
-    href: "",
+    href: "https://github.com/nadhem73/Artix.git",
+    githubLinks: [
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/nadhem73/Artix.git"
+      }
+    ],
     logo: "",
     image: artixImg,
     tags: [
@@ -156,6 +179,7 @@ export const myProjects = [
       "Development of a 2D game in C using the SDL library for graphics rendering and user interaction. Design and implementation of puzzle mechanics to enhance the gaming experience. Integration of Arduino-based scenarios to create interactive and dynamic game elements.",
     ],
     href: "",
+    githubLinks: [],
     logo: "",
     image: portalImg,
     tags: [
@@ -177,97 +201,28 @@ export const myProjects = [
       
     ],
   },
-  // {
-  //   id: 5,
-  //   title: "WordPress Custom Theme",
-  //   description:
-  //     "A fully customizable WordPress theme optimized for performance and SEO.",
-  //   subDescription: [
-  //     "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-  //     "Integrated Tailwind CSS for modern styling and UI enhancements.",
-  //     "Optimized SEO and page speed using Vite.js for fast builds.",
-  //     "Implemented custom widgets and plugin compatibility for extended functionality.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/wordpress-theme.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "WordPress",
-  //       path: "/assets/logos/wordpress.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "HTML5",
-  //       path: html5Logo,
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "CSS3",
-  //       path: css3Logo,
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "Vite.js",
-  //       path: "/assets/logos/vitejs.svg",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 6,
-  //   title: "Online Learning Platform",
-  //   description:
-  //     "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-  //   subDescription: [
-  //     "Built using Blazor WebAssembly for a seamless SPA experience.",
-  //     "Implemented video streaming with Azure Media Services.",
-  //     "Added a quiz system with dynamic question generation and real-time grading.",
-  //     "Integrated Stripe API for secure payment processing.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/elearning.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "Blazor",
-  //       path: "/assets/logos/blazor.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "Azure",
-  //       path: "/assets/logos/azure.svg",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "Stripe",
-  //       path: "/assets/logos/stripe.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "TailwindCSS",
-  //       path: tailwindcssLogo,
-  //     },
-  //   ],
-  // },
 ];
 
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "",
+    href: "https://wa.me/21699455882",
     icon: whatsAppIcon,
   },
   {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/hmida-nadhem/",
     icon: linkedInIcon,
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/nadhem__hmida/",
     icon: instagramIcon,
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/nadhem.hmida/",
+    icon: facebookIcon,
   },
 ];
 
@@ -306,53 +261,3 @@ export const experiences = [
     ],
   },
 ];
-// export const reviews = [
-//   {
-//     name: "Jack",
-//     username: "@jack",
-//     body: "I've never seen anything like this before. It's amazing. I love it.",
-//     img: "https://robohash.org/jack",
-//   },
-//   {
-//     name: "Jill",
-//     username: "@jill",
-//     body: "I don't know what to say. I'm speechless. This is amazing.",
-//     img: "https://robohash.org/jill",
-//   },
-//   {
-//     name: "John",
-//     username: "@john",
-//     body: "I'm at a loss for words. This is amazing. I love it.",
-//     img: "https://robohash.org/john",
-//   },
-//   {
-//     name: "Alice",
-//     username: "@alice",
-//     body: "This is hands down the best thing I've experienced. Highly recommend!",
-//     img: "https://robohash.org/alice",
-//   },
-//   {
-//     name: "Bob",
-//     username: "@bob",
-//     body: "Incredible work! The attention to detail is phenomenal.",
-//     img: "https://robohash.org/bob",
-//   },
-//   {
-//     name: "Charlie",
-//     username: "@charlie",
-//     body: "This is hands down the best thing I've experienced. Highly recommend!",
-//     img: "https://robohash.org/charlie",
-//   },
-//   {
-//     name: "Dave",
-//     username: "@dave",
-//     body: "Simply breathtaking. The best decision I've made in a while.",
-//     img: "https://robohash.org/dave",
-//   },
-//   {
-//     name: "Eve",
-//     username: "@eve",
-//     body: "So glad I found this. It has changed the game for me.",
-//     img: "https://robohash.org/eve",
-//   },
-// ];

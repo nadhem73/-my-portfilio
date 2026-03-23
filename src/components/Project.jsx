@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 import arrowRightIcon from "../assets/assets/arrow-right.svg";
 
@@ -7,11 +7,13 @@ const Project = ({
   description,
   subDescription,
   href,
+  githubLinks,
   image,
   tags,
   setPreview,
 }) => {
-  const [isHidden, setIsHidden] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  
   return (
     <>
       <div
@@ -28,15 +30,15 @@ const Project = ({
           </div>
         </div>
         <button
-          onClick={() => setIsHidden(true)}
+          onClick={() => setIsOpen(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
           Read More
-          <img src={arrowRightIcon} className="w-5" />
+          <img src={arrowRightIcon} className="w-5" alt="Arrow" />
         </button>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-      {isHidden && (
+      {isOpen && (
         <ProjectDetails
           title={title}
           description={description}
@@ -44,7 +46,8 @@ const Project = ({
           image={image}
           tags={tags}
           href={href}
-          closeModal={() => setIsHidden(false)}
+          githubLinks={githubLinks}
+          closeModal={() => setIsOpen(false)}
         />
       )}
     </>
