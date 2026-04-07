@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import closeIcon from "../assets/assets/close.svg";
-import githubIcon from "../assets/assets/logos/github.svg";
 
 const ProjectDetails = ({
   title,
@@ -10,8 +9,6 @@ const ProjectDetails = ({
   subDescription,
   image,
   tags,
-  href,
-  githubLinks,
   closeModal,
 }) => {
   useEffect(() => {
@@ -45,8 +42,6 @@ const ProjectDetails = ({
           {subDescription && subDescription.map((subDesc, index) => (
             <p key={index} className="mb-3 font-normal text-neutral-400">{subDesc}</p>
           ))}
-          
-          {/* Technologies */}
           <div className="flex flex-wrap gap-3 mt-4">
             {tags.map((tag) => (
               <img
@@ -57,37 +52,6 @@ const ProjectDetails = ({
               />
             ))}
           </div>
-
-          {/* GitHub Links */}
-          {githubLinks && githubLinks.length > 0 && (
-            <div className="mt-6">
-              <h6 className="mb-3 text-lg font-semibold text-white">GitHub Repositories</h6>
-              <div className="flex flex-col gap-2">
-                {githubLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 transition-all border rounded-lg border-white/10 hover:border-sand hover:bg-white/5 group"
-                  >
-                    <img src={githubIcon} className="size-5" alt="GitHub" />
-                    <span className="text-sm font-medium text-white transition-colors group-hover:text-sand">
-                      {link.label}
-                    </span>
-                    <svg 
-                      className="w-4 h-4 ml-auto transition-transform text-neutral-400 group-hover:text-sand group-hover:translate-x-1" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       </motion.div>
     </div>
